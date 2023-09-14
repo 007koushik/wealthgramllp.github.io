@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Icon/letter-w.png" type="icon">
+    <title>Wealthgram</title>
+    <link href="./Styles.css" rel="stylesheet">
+    <link href="./toggle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="./Script.js"></script>
+    <script defer src="./toggle.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- <div class="logo"> </div> -->
+        <a href="index.html" class="logo"></a>
+        <div class="menu" id="menu">
+            <i class=" y fas fa-bars"></i>
+            <i class=" x fas fa-times"></i>
+        </div>
+        <nav>
+            <!-- <nav class= {`navbar ${isNavOpen ? 'open' : ''}`}>
+          <div class="toggle-icon" onClick={handleToggleNav}>
+            <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+            <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+            <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+          </div> -->
+            <ul class='rajdeep nav-links' id="navLinks">
+
+                <!-- <li class="dropdown nav-list">
+                  <a>Services</a>
+                  <ul class="dropdown-content" id="ddown">
+                      <li><a href="#">Strategic business advice</a></li>
+                      <li><a href="#">Budgeting</a></li>
+                      <li><a href="#">Fund raising by way of equity, debt, ICDs etc.</a></li>
+                      <li><a href="#">Cash flow management</a></li>
+                      <li><a href="#">Working capital management</a></li>
+                      <li><a href="#">Support for non-critical legal drafting and litigation support</a></li>
+                      <li><a href="#">Statutory compliance management like GST, TDS, ESI, PF, MCA etc.</a></li>
+                      <li><a href="#">Streamlining business process flow for critical activities</a></li>
+                      <li><a href="#">Receivables management</a></li>
+                      <li><a href="#">Inventory management</a></li>
+                      <li><a href="#">Company secretarial services</a></li>
+                      <li><a href="#">Accounting and accounting supervision</a></li>
+                      <li><a href="#">ERP debottlenecking/upgradation</a></li>
+                      <li><a href="#">Tax planning</a></li>
+                      <li><a href="#">Payroll and HR management</a></li>
+                  </ul>
+              </li> -->
+                <!-- <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}> -->
+                <!-- <li><a class="linkrr" href="./">Home</a></li> -->
+                <li class="nav-list"><a href="About.html">About</a></li>
+                <li class="nav-list"><a href="./Services.html">Services</a></li>
+                <li class="nav-list"><a href="OurClient.html">Our Client</a></li>
+                <li class="nav-list"><a href="./Blogs.html">Blogs</a></li>
+                <li class="nav-list"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services" id="services">
+        <h2 class="hh">We at Wealthgram are equipped to provide part-time CFO services by qualified chartered
+            accountants and company secretary having experience of more than 30 years in business management and
+            finances.</h2>
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Strategic business advice</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Mobile App Development">
+                    </div>
+                    <div class="service-content">
+                        <h3>Budgeting</h3>
+                        <p>Our team develops mobile apps that are responsive and user-friendly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Graphic Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Business planning</h3>
+                        <p>We offer creative graphic design solutions for your branding needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Fund raising by way of equity, debt, ICDs etc.</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cash flow management</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Working capital management</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Support for non-critical legal drafting and litigation support</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Statutory compliance management like GST, TDS, ESI, PF, MCA etc</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Streamlining business process flow for critical activities</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Receivables management</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Inventory management</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Company secretarial services</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Accounting and accounting supervision</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>ERP debottlenecking/
+                            upgradation</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tax planning</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="service">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Payroll and HR management</h3>
+                        <p>We create beautiful and functional websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <!-- <div class="icon" style="color: aqua;"> -->
+
+        <!-- <div class="team">
+            
+            <div class="team-memb">
+              <img src="./images/marketing.jpeg" alt="Team Member 3"  title="Business Developer">
+            <h3>Abhijit Chatterjee</h3>
+            <p>Marketing</p>
+          </div> -->
+
+        <p class="hus">&copy; 2023 Husney Mobarak. All rights reserved.</p>
+        <!--<a href="#" class="social-icon"><i class="fab fa-facebook-f"
+                style="color: rgb(255, 255, 255); size: 50px; "></i></a>
+        -->
+    </footer>
+</body>
+
+</html>

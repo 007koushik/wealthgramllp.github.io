@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Icon/letter-w.png" type="icon">
+  <title>Wealthgram</title>
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script defer src="Script.js"></script>
+  <script defer src="toggle.js"></script>
+  <link rel="stylesheet" href="toggle.css">
+  <style>
+    #hero {
+      position: relative;
+      animation: mymove 3s;
+    }
+
+    /* @keyframes mymove {
+  0%   {top: 0px; background: red; width: 100px;}
+  100% {top: 100px; background: yellow; width: 300px;}
+  
+} */
+
+    /* @keyframes mymove {
+  from {bottom: 200px;}
+  to {bottom: 0px;}
+} */
+
+    @keyframes mymove {
+      0% {
+        left: 0px;
+        top: 0px;
+      }
+
+      75% {
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    .hidden {
+      opacity: 1;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: all 1s;
+    }
+
+
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+
+    /* @keyframes mymove {
+  from {top: 100px;}
+  to {bottom: 0px;}
+} */
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <header class="header">
+      <!-- <div class="logo"> </div> -->
+      <a href="#" class="logo"></a>
+      <div class="menu" id="menu">
+        <i class=" y fas fa-bars"></i>
+        <i class=" x fas fa-times"></i>
+      </div>
+      <nav>
+        <!-- <nav class= {`navbar ${isNavOpen ? 'open' : ''}`}>
+        <div class="toggle-icon" onClick={handleToggleNav}>
+          <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+          <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+          <div class={`bar ${isNavOpen ? 'open' : ''}`}></div>
+        </div> -->
+        <ul class='rajdeep nav-links' id="navLinks">
+
+          <!-- <li class="dropdown nav-list">
+                <a>Services</a>
+                <ul class="dropdown-content" id="ddown">
+                    <li><a href="#">Strategic business advice</a></li>
+                    <li><a href="#">Budgeting</a></li>
+                    <li><a href="#">Fund raising by way of equity, debt, ICDs etc.</a></li>
+                    <li><a href="#">Cash flow management</a></li>
+                    <li><a href="#">Working capital management</a></li>
+                    <li><a href="#">Support for non-critical legal drafting and litigation support</a></li>
+                    <li><a href="#">Statutory compliance management like GST, TDS, ESI, PF, MCA etc.</a></li>
+                    <li><a href="#">Streamlining business process flow for critical activities</a></li>
+                    <li><a href="#">Receivables management</a></li>
+                    <li><a href="#">Inventory management</a></li>
+                    <li><a href="#">Company secretarial services</a></li>
+                    <li><a href="#">Accounting and accounting supervision</a></li>
+                    <li><a href="#">ERP debottlenecking/upgradation</a></li>
+                    <li><a href="#">Tax planning</a></li>
+                    <li><a href="#">Payroll and HR management</a></li>
+                </ul>
+            </li> -->
+          <!-- <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}> -->
+          <!-- <li><a class="linkrr" href="./">Home</a></li> -->
+          <li class="nav-list"><a href="About.html">About</a></li>
+          <li class="nav-list"><a href="./Services.html">Services</a></li>
+          <li class="nav-list"><a href="./OurClient.html">Our Client</a></li>
+          <li class="nav-list"><a href="./Blogs.html">Blogs</a></li>
+          <li class="nav-list"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div id="hero">
+
+      <div class="home-container" id='home'>
+        <div class="background-image"></div>
+        <section class="content">
+          <div class="content-image">
+            <img src="./images/Conversion rate optimization-rafiki.png" alt="Contact" />
+          </div>
+          <div class="content-2">
+            <h2>Welcome to My Website</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius justo ac elit
+              faucibus, eget consectetur magna vestibulum. Sed tincidunt purus a nisl fermentum
+              scelerisque.
+            </p>
+            <div class="hover-buttons">
+              <button class="button-primary">Learn More</button>
+              <button class="button-secondary" href="#contact">Contact Me</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <footer class="footer">
+    <!-- <div class="icon" style="color: aqua;"> -->
+    <!-- </div> -->
+    <!-- <div class="team">
+          
+          <div class="team-memb">
+            <img src="./images/marketing.jpeg" alt="Team Member 3"  title="Business Developer">
+          <h3>Abhijit Chatterjee</h3>
+          <p>Marketing</p>
+        </div> -->
+    <!-- </div> -->
+    <p class="hus">&copy; 2023 Husney Mobarak. All rights reserved.</p>
+    <!--<a href="#" class="social-icon"><i class="fab fa-facebook-f"
+        style="color: rgb(255, 255, 255); size: 50px; "></i></a>
+    -->
+  </footer>
+
+
+
+
+  <script>
+
+    // Create an IntersectionObserver instance with a callback function.
+    const observer = new IntersectionObserver((entries) => {
+      // The callback function receives an array of entries.
+      entries.forEach((entry) => {
+        console.log(entry); // Log the entry object for reference.
+
+        // Check if the observed element is currently intersecting the viewport.
+        if (entry.isIntersecting) {
+          // If the element is intersecting, add the 'show' class to the element's class list.
+          entry.target.classList.add('show');
+        } else {
+          // If the element is not intersecting, remove the 'show' class from the element's class list.
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Select all elements with the class 'hidden'.
+    const serviceElements = document.querySelectorAll('.hidden');
+
+    // Iterate through the selected elements and start observing each of them using the IntersectionObserver.
+    serviceElements.forEach((el) => observer.observe(el));
+
+
+  </script>
+
+</body>
+
+</html>
