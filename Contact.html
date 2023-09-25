@@ -126,13 +126,13 @@
       </div>
       <div class="contact-form">
         <h2>Contact Us</h2>
-        <form action="#">
+        <form action="connect.php" method="post">
           <div class="input-container">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Contact Number" required>
+            <input type="text" placeholder="Full Name" name="firstName" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="tel" placeholder="Contact Number" name="number" required>
           </div>
-          <textarea placeholder="Send a message"></textarea>
+          <textarea placeholder="Send a message" name="sms"></textarea>
           <button type="submit" class="btn">Submit</button>
         </form>
       </div>
